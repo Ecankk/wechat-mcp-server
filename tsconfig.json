@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ES2022", // 目标 ECMAScript 版本
+    "module": "NodeNext", // 使用 Node.js 的现代模块系统
+    "moduleResolution": "NodeNext", // 模块解析策略
+    "rootDir": "./src", // TypeScript 文件根目录
+    "outDir": "./build", // JavaScript 输出目录
+    "esModuleInterop": true, // 允许默认导入 CommonJS 模块
+    "forceConsistentCasingInFileNames": true, // 强制文件名大小写一致
+    "strict": true, // 启用所有严格类型检查选项
+    "skipLibCheck": true, // 跳过声明文件的类型检查
+    "resolveJsonModule": true // 允许导入 JSON 模块
+  },
+  "include": [
+    "src/**/*",
+    "test.ts"
+  ], // 包含 src 目录下的所有 .ts 文件
+  "exclude": [
+    "node_modules",
+    "build"
+  ] // 排除 node_modules 和 build 目录
+}
